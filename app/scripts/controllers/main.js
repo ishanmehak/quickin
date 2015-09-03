@@ -8,7 +8,7 @@
  * Controller of the quickinApp
  */
 angular.module('quickinApp')
-  .controller('MainCtrl', function () {
+  .controller('GuestListCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
