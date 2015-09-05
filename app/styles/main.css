@@ -5,11 +5,24 @@ body{
   background-color: lightgray
 }
 .navbar-default {
-    background-color: #232C34 !important;
-  }
-  .navbar {
-    min-height: 70px !important;
-  }
-  a:hover{
-    color:transparent !important;
-  };
+  background-color: #232C34 !important;
+}
+.navbar {
+  min-height: 75px !important;
+}
+.navbar-header .header-hover a:hover{
+  color:white !important;
+};
+.navbar-nav>li {
+    float: left !important;
+  /*  width: 100px !important;*/
+}
+.margin-left5 {
+  padding-top:5px;
+}
+.clock-badge-radius{
+  border-radius: 25px;
+}
+.margin-top15{
+  margin-top:15px;
+}
