@@ -1,0 +1,67 @@
+<div class="container-fluid">
+	<div class = "row" >
+		<div class="col-md-8" style="min-height: 520px;padding-top:30px">
+			<div ng-repeat="guest in GuestArray">
+			<div style="min-height:100px;background:#004830" >
+				<span style="color:white">{{guest.GuestName}}</span>
+			</div>
+			<br>
+		</div>
+		</div>
+		<div class="col-md-4" style="min-height: 520px;background:black">
+			<div style="text-align:center;color:white;font-size:20px;padding-top:20px">Add Guests</div>
+			<form>
+				<div class="row">
+					<div class="col-md-8">
+						<label for="GuestName">Name</label>
+			    		<input type="text" class="form-control" id="GuestName" placeholder="Name" ng-model="Guest.GuestName">
+					</div>
+					<div class="col-md-4">
+						 <label for="NoOfPersons"> Single select </label>
+						    <select name="NoOfPersons" ng-model="Guest.NoOfPersons">
+						      <option value="">---Please select---</option> <!-- not selected / blank option -->
+						      <option value="1">1</option>
+						      <option value="2">2</option>
+					          <option value="3">3</option>
+						      <option value="4">4</option>
+						    </select>
+					</div>
+				</div>
+				<br>
+				<div class="form-group">
+				    <label for="GuestPhone">Contact</label>
+				    <input type="number" class="form-control" id="GuestPhone" placeholder="Contact" ng-model="Guest.GuestPhone">
+			  	</div>
+			  	<br>
+				<div class="form-group">
+				     <label for="WaitingTime"> Quote </label><br>
+						    <select name="WaitingTime" ng-model="Guest.WaitingTime">
+						      <option value="">---Please select---</option> <!-- not selected / blank option -->
+						      <option value="option-2">Option 2</option>
+						    </select>
+			  	</div>
+			  	<br>
+				<div class="form-group">
+				    <label for="GuestMesssage">Message</label>
+				    <input type="text" class="form-control" id="GuestMesssage" placeholder="Message" ng-model="Guest.GuestMesssage">
+			  	</div>
+			  	<br><br>
+			  	<div class="row">
+					<div class="col-md-3">
+						<span style="margin-left:5px">Cancel</span>
+					</div>
+					<div class="col-md-3">
+						<img src="images/Add-tag.png" width="50px" height="50px" ng-click="addGuest()"></img>
+					</div>
+				</div>
+
+			  <!--  First Name:<br>
+			    <input type="text" ng-model="user.firstName"><br>
+			    Last Name:<br>
+			    <input type="text" ng-model="user.lastName">
+			    <br><br>
+			    <button ng-click="reset()">RESET</button>-->
+			 </form>
+		</div>
+	</div>
+</div>

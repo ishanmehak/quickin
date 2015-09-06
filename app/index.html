@@ -10,9 +10,9 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
-    <!-- endbuild -->
+    <!-- endbuild -->    <link rel="stylesheet" href="styles/main.css">
+
     <!-- build:css(.tmp) styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
   <body ng-app="quickinApp">
@@ -21,7 +21,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header">
+   <div class="header">
      <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="row">
@@ -33,38 +33,20 @@
             <div class="col-md-2 col-sm-2"><a href="#">3-4 guests<br>10</a></div>
             <div class="col-md-2 col-sm-2"><a href="#">5+ guests<br>20</a></div>
           </div>
-           <!-- <div class="navbar-header ">
-               <ul class="nav navbar-nav header-hover">
-                    <li class="nav-li"><a href="#"><i class="glyphicon glyphicon-search"></i></a></li>
-                    <li class="nav-li"><a href="#">All guests<br>10</a></li>
-                    <li class="nav-li"><a href="#">1-2 guests<br>20</a></li>
-                    <li class="nav-li"><a href="#">3-4 guests<br>20</a></li>
-                    <li class="nav-li"><a href="#">5+ guests<br>200</a></li>
-                </ul>
-            </div>-->
           </div>
-          
           <div class="col-md-4 col-sm-4 margin-left5 margin-top15">
               <div class="row">
             <div class="col-md-6 col-sm-6"><a href="#"><span class="badge clock-badge-radius" style="background:black;color:green"><img src="images/Time.png" width="27px" height="30px"></img>15mins</span></a></div>
             <div class="col-md-6 col-sm-6"><a href="#"><i class="glyphicon glyphicon-option-vertical"></i></a></div>
           </div>
-          <!--    <li class="nav-li"><a href="#"><span class="badge" style="background:black;color:green"><img src="images/Time.png"></img>15mins</span></a></li>
-              <li class="nav-li"><a href="#"><i class="glyphicon glyphicon-option-vertical"></i></a></li>
-             <div class="navbar-header" style="width:100%">
-                   <ul class="nav navbar-nav header-hover" style="width:100%">
-                            <li class="nav-li" style="width:100%"><a href="#"><span class="badge" style="background:black;color:green"><img src="images/Time.png"></img>15mins</span></a></li>
-                            <li class="nav-li" style="width:100%"><a href="#"><i class="glyphicon glyphicon-option-vertical"></i></a></li>
-                  </ul>
-              </div>-->
           </div>
         </div>
       </div>
      </nav>
     </div>
 
-    <div class="container">
-    <div ng-view=""></div>
+    <div class="container-fluid" style="margin-top:75px;width:100%;padding:0px">
+      <div ng-view=""></div>
     </div>
 
     <!--<div class="footer">
